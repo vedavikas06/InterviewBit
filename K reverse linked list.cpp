@@ -13,7 +13,7 @@ ListNode* Solution::reverseList(ListNode* A, int B) {
         int i =0,j=0;
  
         if(B!=1){
-        while (i<B)
+        while (i<B && current!=NULL)
         {
             if(i==0){
                 last1=current;
