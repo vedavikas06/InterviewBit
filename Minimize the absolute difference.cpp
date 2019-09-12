@@ -8,7 +8,8 @@ int Solution::solve(vector<int> &A, vector<int> &B, vector<int> &C) {
         int cur = max(A[i],max(B[j],C[k]))-min(A[i],min(B[j],C[k]));
         
         if(cur < minn){
-            cur  = minn;
+            minn=cur;
+            //cur=minn gives wrong result;
         }
         int maxx = max(A[i],max(B[j],C[k]));
         if(maxx == A[i]){
