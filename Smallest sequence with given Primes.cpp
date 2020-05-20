@@ -15,7 +15,8 @@ vector<int> Solution::solve(int A, int B, int C, int D) {
         int tp = p.top();
         p.pop();
         
-        if(m.find(tp)!=m.end()){
+        //Here it should be == and not != as we do it for every new encountered element
+        if(m.find(tp)==m.end()){
         res.push_back(tp);
         
         for(int i =0;i<v.size();i++){
